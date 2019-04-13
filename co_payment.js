@@ -44,3 +44,8 @@
 
 */
 
+window.addEventListener("load", function() {
+      //retrieve the field value pairs from the URL
+      var formData = location.search.slice(1);
+      
+});
