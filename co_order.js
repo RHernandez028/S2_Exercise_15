@@ -74,9 +74,9 @@ function calcOrder() {
      var totalCost = initalCost + pCost + salesTax;
      orderForm.elements.totalCost.value = formatUSACurrency(totalCost);
 
-     //store order detail
+     //store the order details
      orderForm.elements.modelName.value = orderForm.elements.model.options[mIndex].text;
-     orderForm.elements.protectionName.value = document.querySelector('input[name="protection"]:checked').nextSibling.nodeVale;
+     orderForm.elements.protectionName.value = document.querySelector('input[name="protection"]:checked').nextSibling.nodeValue;
 }
 
 function formatNumber(val, decimals) {
